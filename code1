@@ -1,0 +1,13 @@
+int x = 1, mm = 0, hr = 0, result = 0, check = 0;
+		while (x <= 100) {
+			System.out.println("Enter the minutes:>");
+      mm = scn.nextInt();                 //input in java
+			check += mm;                       //add the minutes
+			if (check >= 60) {                 //checks if minutes are above 60 
+				hr = check / 60;                 //coverts into hours
+				result += hr;                    //updates the hours
+				check = check % 60;              // stores remaining minutes  
+			}
+			System.out.println("hours:>"+result + " " +"minutes:>"+ check);
+			x++;
+		}
